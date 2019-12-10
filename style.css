@@ -5,6 +5,13 @@
     text-align: center;
     margin-left: 250px;
     margin-top: 50px;
+    position: relative;   
+}
+
+#questionbox {
+    text-align: center;
+    width: 50%;
     position: relative;
-    
+    margin-left: 375px;
+    min-height: 250px;
 }
