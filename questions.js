@@ -1,25 +1,31 @@
 var quizStarter = $("#start");
 var container = document.querySelector(".container");
-
-
 var questionBox = "";
 var finalArray = [
     {
-      title: "Commonly used data types DO NOT include:",
-      choices: ["strings", "booleans", "alerts", "numbers"],
-      answer: "alerts"
+      title: "What was the Philadelphia Eagles famous play in the 2017-2018 Superbowl?",
+      choices: ["tomato special", "pitch pass", "hail mary", "philly special"],
+      answer: "philly special"
     },
     {
-      title: "The condition in an if / else statement is enclosed within ____.",
-      choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-      answer: "parentheses"
+      title: "Who was the starting quarterback in that Superbowl?",
+      choices: ["Donovan McNabb", "Nick Foles", "Michael Vick", "Carson Wentz"],
+      answer: "Nick Foles"
+    },
+    {
+      title: "How many Superbowl wins do the Eagles have?",
+      choices: ["3", "0", "5", "1"],
+      answer: "1"
+    },
+    {
+      title: "Eagles beat the Patriots in Superbowl 52, but who did the Eagles lose to in Superbowl 39?",
+      choices: ["Patriots", "Giants", "Ravens", "Steelers"],
+      answer: "Patriots"
     }
 ]
 
-quizStarter.on("click", function() {
-  if (quizStarter) {
-      (questions.textcontent) 
-  }
+    $("quizStarter").click(function() {
+        $(finalArray).show();
 });
 
 
@@ -40,8 +46,10 @@ c2.text(q1.choices[1]);
 c2.addClass("btn btn-outline-success");
 var c3 = $("<button>");
 c3.text(q1.choices[2]);
+c3.addClass("btn btn-outline-success");
 var c4 = $("<button>");
 c4.text(q1.choices[3]);
+c4.addClass("btn btn-outline-success");
 
 c1.on("click", function(event){
     console.log(event.target.innerText)
@@ -88,4 +96,11 @@ var correctAnswer = function () {
 }
 var answer 
 var timer = 75 
-// 
+var seconds = 75, $seconds = document.querySelector('#countdown');
+(function countdown() {
+    $seconds.textContent = seconds + ' second' + (seconds == 1 ?  '' :  's')
+    if(seconds --> 0) setTimeout(countdown, 1000)
+})();
+
+
+

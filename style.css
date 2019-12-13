@@ -1,6 +1,6 @@
 #start {
     width: 66%;
-    color: white;
+    color: green;
     align-content: center;
     text-align: center;
     margin: 50px auto;
@@ -16,3 +16,8 @@
     margin: 0 auto;
     display: block;
 }
+
+
+  li {
+    list-style-type: none;
+  }
