@@ -21,3 +21,13 @@
   li {
     list-style-type: none;
   }
+  .hide {
+    display: none;
+  }
+  #countdown {
+  color: red;
+  text-align: center;
+  }
+  .countdown {
+    text-align: center;
+  }
